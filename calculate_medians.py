@@ -20,10 +20,21 @@ median_bubblesort, mean_bubblesort, std_dev_bubblesort = calculate_rounded_stati
 median_quicksort, mean_quicksort, std_dev_quicksort = calculate_rounded_statistics(quicksort)
 
 # ERGEBNIS AUFGABE 2.5 B
+print("AUFGABE 2.5 B")
 
 print("Mergesort - Median: {} ms, Mittelwert: {} ms, Standardabweichung: {} ms".format(median_mergesort, mean_mergesort,
                                                                                        std_dev_mergesort))
 print("Bubblesort - Median: {} ms, Mittelwert: {} ms, Standardabweichung: {} ms".format(median_bubblesort,
-                                                                                        mean_bubblesort,                                                                            std_dev_bubblesort))
+                                                                                        mean_bubblesort,                                                                     std_dev_bubblesort))
 print("Quicksort - Median: {} ms, Mittelwert: {} ms, Standardabweichung: {} ms".format(median_quicksort, mean_quicksort,
+
                                                                                        std_dev_quicksort))
+# BEARBEITUNG AUFGABE 2.5 C
+all_data = mergesort + bubblesort + quicksort
+
+median_combined, mean_combined, std_dev_combined = calculate_rounded_statistics(all_data)
+
+# ERGEBNIS AUFGABE 2.5 C
+print("AUFGABE 2.5 C")
+print("Alle Daten zusammen - Median: {} ms, Mittelwert: {} ms, Standartabweichung: {} ms".format(median_combined, mean_combined,
+                                                                                     std_dev_combined))
